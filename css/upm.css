@@ -12,6 +12,7 @@
     .linewrap ul li {
         float: left;
         display: block;
+        width:33.3%;
     }
     .linewrap ul li img {
         width: 400px;
@@ -22,3 +23,11 @@
        float:left;
        text-align: center;
    }
+
+   .test{
+       width:300%;
+       overflow-x:scroll;
+   }
+   /*.testImg{*/
+       /*width:100%;*/
+   /*}*/

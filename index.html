@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="./bootflat/css/bootflat.css">
     <link rel="stylesheet" href="./css/upm.css">
     <style>
-        .container{
-            margin:0 auto;
-
-        }
         body{
             width:100%;
             overflow-x: hidden;
@@ -26,45 +22,45 @@
 
 <!--<div class="col-xs-12">-->
 <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">监控平台</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
-                    <!-- <li class="disabled"><a href="#">Link</a></li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-header">Setting</li>
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="active"><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li class="disabled"><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-search search-only">
-                        <i class="search-icon glyphicon glyphicon-search"></i>
-                        <input type="text" class="form-control search-query">
-                    </div>
-                </form>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">监控平台</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <!-- <li class="disabled"><a href="#">Link</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Setting</li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="active"><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li class="disabled"><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-search search-only">
+                    <i class="search-icon glyphicon glyphicon-search"></i>
+                    <input type="text" class="form-control search-query">
+                </div>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 <!--</div>-->
 
 <!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->
@@ -72,334 +68,352 @@
     <!--Launch demo modal-->
 <!--</button>-->
 
-<div class="row">
-    <div class="col-xs-12">
-        <button type="button" class="btn btn-primary btn-block"  data-toggle="modal" data-target="#myModal" >点击选择查询时间段</button>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-primary btn-block"  data-toggle="modal" data-target="#myModal" >点击选择查询时间段</button>
+        </div>
     </div>
-</div>
-
-
 
 <!--<div class = "container">-->
-<div class="row">
-    <div class="col-xs-6">
-        <div class="radio">
-            <input type="radio" id="flat-radio-1">
-            <label for="flat-radio-1">告警短信</label>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="radio">
+                <input type="radio" id="flat-radio-1">
+                <label for="flat-radio-1">告警短信</label>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="radio">
+                <input type="radio" id="flat-radio-2" checked>
+                <label for="flat-radio-2">手工输入模糊查询</label>
+            </div>
         </div>
     </div>
-    <div class="col-xs-6">
-        <div class="radio">
-            <input type="radio" id="flat-radio-2" checked>
-            <label for="flat-radio-2">手工输入模糊查询</label>
-        </div>
-    </div>
-</div>
 
 
 
 <!--输入框-->
-<div class="row">
-    <div class = "col-xs-12">
-        <div class="form-search search-only">
-            <i class="search-icon glyphicon glyphicon-search"></i>
-            <input type="text" class="form-control search-query">
+    <div class="row">
+        <div class = "col-xs-12">
+            <div class="form-search search-only">
+                <i class="search-icon glyphicon glyphicon-search"></i>
+                <input type="text" class="form-control search-query">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class = "col-xs-12">
-        <textarea class="form-control" rows="3"></textarea>
+    <div class="row">
+        <div class = "col-xs-12">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
     </div>
-</div>
 <!--多选框-->
-<div class="row">
-    <div class="col-xs-12">
-        <select name="selecter_multiple" class="selecter_5" multiple="multiple" disabled = "disabled" >
-    <option value="1" >One</option>
-    <!--<option value="2" disabled>Two</option>-->
-    <!--<option value="3" selected>Three</option>-->
-    <option value="4">Four</option>
-    <option value="5">Five</option>
-    <option value="6">Six</option>
-    <option value="7">Seven</option>
-    <option value="8">Eight</option>
-    <option value="9">Nine</option>
-    <option value="10">Ten</option>
-</select>
+    <div class="row">
+        <div class="col-xs-12">
+            <select name="selecter_multiple" class="selecter_5" multiple="multiple" disabled = "disabled" >
+        <option value="1" >One</option>
+        <!--<option value="2" disabled>Two</option>-->
+        <!--<option value="3" selected>Three</option>-->
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+        <option value="6">Six</option>
+        <option value="7">Seven</option>
+        <option value="8">Eight</option>
+        <option value="9">Nine</option>
+        <option value="10">Ten</option>
+    </select>
+        </div>
     </div>
-</div>
-
-
 
 <!--轮播图-->
-<div class="row">
-    <div class="linewrap">
-        <ul>
-            <li><img src="img/slider1.jpg" alt=""></li>
-            <li><img src="img/slider2.jpg" alt=""></li>
-            <li><img src="img/slider3.jpg" alt=""></li>
-        </ul>
-    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="linewrap">
+                <ul>
+                    <li><img src="img/slider1.jpg" class = "testImg" alt=""></li>
+                    <li><img src="img/slider2.jpg" class = "testImg" alt=""></li>
+                    <li><img src="img/slider3.jpg" class = "testImg" alt=""></li>
+                </ul>
+             </div>
+        </div>
+        <!--<div class="col-xs-12">-->
+            <!--<div class="row test">-->
+                <!--<div class="col-xs-12">-->
+                    <!--<img src="img/slider1.jpg" class = "testImg" alt="">-->
+                <!--</div>-->
+                <!--<div class="col-xs-12">-->
+                    <!--<img src="img/slider1.jpg" class = "testImg" alt="">-->
+                <!--</div>-->
+                <!--<div class="col-xs-12">-->
+                    <!--<img src="img/slider1.jpg" class = "testImg" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
 
-<!--<div class="jumbotron">-->
-    <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
-    <!--<ol class="carousel-indicators">-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-    <!--</ol>-->
-    <!--<div class="carousel-inner">-->
-        <!--<div class="item active"><img src="img/slider1.jpg"></div>-->
-        <!--<div class="item"><img src="img/slider2.jpg"></div>-->
-        <!--<div class="item"><img src="img/slider3.jpg"></div>-->
+
+        <!--</div>-->
+
+
+
+    <!--<div class="jumbotron">-->
+        <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
+        <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+        <!--</ol>-->
+        <!--<div class="carousel-inner">-->
+            <!--<div class="item active"><img src="img/slider1.jpg"></div>-->
+            <!--<div class="item"><img src="img/slider2.jpg"></div>-->
+            <!--<div class="item"><img src="img/slider3.jpg"></div>-->
+        <!--</div>-->
+        <!--<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">-->
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">-->
+            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+        <!--</a>-->
     <!--</div>-->
-    <!--<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">-->
-        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-    <!--</a>-->
-    <!--<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">-->
-        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-    <!--</a>-->
-<!--</div>-->
-<!--</div>-->
-</div>
+    <!--</div>-->
+    </div>
 
-<div class="row">
-    <div class="col-xs-12">
-        <button type="button" class="btn btn-primary btn-block" aria-expanded="true" aria-controls="demo" data-toggle="collapse" data-target="#demo">点击选择查询时间点</button>
-    </div>
-</div>
-<div class="row collapse " id = "demo">
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio"  id ="test">
-            <label for="flat-radio-1" for = "test">00:01</label>
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-primary btn-block" aria-expanded="true" aria-controls="demo" data-toggle="collapse" data-target="#demo">点击选择查询时间点</button>
         </div>
     </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:02</label>
+
+    <div class="row collapse " id = "demo">
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio"  id ="test">
+                <label for="flat-radio-1" for = "test">00:01</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:02</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:03</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:04</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:05</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:06</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:07</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:01</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:02</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:03</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:04</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:05</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:06</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:07</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:01</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:02</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:03</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:04</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:05</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:06</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:07</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="radio">
+                <input type="radio" >
+                <label for="flat-radio-1">00:08</label>
+            </div>
         </div>
     </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:03</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:04</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:05</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:06</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:07</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:01</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:02</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:03</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:04</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:05</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:06</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:07</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:01</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:02</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:03</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:04</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:05</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:06</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:07</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="radio">
-            <input type="radio" >
-            <label for="flat-radio-1">00:08</label>
-        </div>
-    </div>
-</div>
 
 <!--表格-->
-<div class="row">
-    <div class="col-xs-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">ip 可用率耗时调用次数图表</div>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>IP</th>
-                    <th>可用率</th>
-                    <th>耗时(ms)</th>
-                    <th>调用次数</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><a data-toggle="modal" data-target="#sheetModal">ip1</a> </td>
-                    <td><a data-toggle="modal" data-target="#sheetModal">94.6%</a></td>
-                    <td><a data-toggle="modal" data-target="#sheetModal">20</a></td>
-                    <td><a data-toggle="modal" data-target="#sheetModal">120</a></td>
-                </tr>
-                <tr>
-                    <td><a data-toggle="modal" data-target="#sheetModal">ip1</a> </td>
-                    <td><a data-toggle="modal" data-target="#sheetModal">94.6%</a></td>
-                    <td><a data-toggle="modal" data-target="#sheetModal">20</a></td>
-                    <td><a data-toggle="modal" data-target="#sheetModal">120</a></td>
-                </tr>
-                <tr>
-                    <td><a data-toggle="modal" data-target="#myModal">ip1</a> </td>
-                    <td><a data-toggle="modal" data-target="#myModal">94.6%</a></td>
-                    <td><a data-toggle="modal" data-target="#myModal">20</a></td>
-                    <td><a data-toggle="modal" data-target="#myModal">120</a></td>
-                </tr>
-                <tr>
-                    <td><a data-toggle="modal" data-target="#myModal">ip1</a> </td>
-                    <td><a data-toggle="modal" data-target="#myModal">94.6%</a></td>
-                    <td><a data-toggle="modal" data-target="#myModal">20</a></td>
-                    <td><a data-toggle="modal" data-target="#myModal">120</a></td>
-                </tr>
-                </tbody>
-            </table>
-            <button type="button" class="btn btn-default btn-block">点击加载更多...</button>
-            <div class = "more"> 点击加载更多...</div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">ip 可用率耗时调用次数图表</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>可用率</th>
+                        <th>耗时(ms)</th>
+                        <th>调用次数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a data-toggle="modal" data-target="#sheetModal">ip1</a> </td>
+                        <td><a data-toggle="modal" data-target="#sheetModal">94.6%</a></td>
+                        <td><a data-toggle="modal" data-target="#sheetModal">20</a></td>
+                        <td><a data-toggle="modal" data-target="#sheetModal">120</a></td>
+                    </tr>
+                    <tr>
+                        <td><a data-toggle="modal" data-target="#sheetModal">ip1</a> </td>
+                        <td><a data-toggle="modal" data-target="#sheetModal">94.6%</a></td>
+                        <td><a data-toggle="modal" data-target="#sheetModal">20</a></td>
+                        <td><a data-toggle="modal" data-target="#sheetModal">120</a></td>
+                    </tr>
+                    <tr>
+                        <td><a data-toggle="modal" data-target="#myModal">ip1</a> </td>
+                        <td><a data-toggle="modal" data-target="#myModal">94.6%</a></td>
+                        <td><a data-toggle="modal" data-target="#myModal">20</a></td>
+                        <td><a data-toggle="modal" data-target="#myModal">120</a></td>
+                    </tr>
+                    <tr>
+                        <td><a data-toggle="modal" data-target="#myModal">ip1</a> </td>
+                        <td><a data-toggle="modal" data-target="#myModal">94.6%</a></td>
+                        <td><a data-toggle="modal" data-target="#myModal">20</a></td>
+                        <td><a data-toggle="modal" data-target="#myModal">120</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-default btn-block">点击加载更多...</button>
+                <div class = "more"> 点击加载更多...</div>
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>
 
 
 <!--分页组件-->
@@ -418,63 +432,64 @@
 <!--</div>-->
 
 <!--modal 弹出时间段-->
-<div class="modal fade" id = "myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">时间段选择</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <select name="selecter_multiple" class="selecter_6" multiple="multiple"  >
-                        <option value="1" >One</option>
-                        <!--<option value="2" disabled>Two</option>-->
-                        <!--<option value="3" selected>Three</option>-->
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-                        <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
-                        <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
-
-
-                    </select>
-
-
+    <div class="modal fade" id = "myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">时间段选择</h4>
                 </div>
-            </div>
-            <!--<div class="modal-footer">-->
+                <div class="modal-body">
+                    <div class="row">
+                        <select name="selecter_multiple" class="selecter_6" multiple="multiple"  >
+                            <option value="1" >One</option>
+                            <!--<option value="2" disabled>Two</option>-->
+                            <!--<option value="3" selected>Three</option>-->
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
+                            <option value="4">2016/12/24:00:00:00-2016/12/24:00:30:00</option>
+                            <option value="4">2016/12/24:00:31:00-2016/12/24:01:00:00</option>
 
-            <!--</div>-->
+
+                        </select>
+
+
+                    </div>
+                </div>
+                <!--<div class="modal-footer">-->
+
+                <!--</div>-->
+            </div>
         </div>
     </div>
-</div>
 
 <!--modal 弹出图表-->
-<div class="modal fade" id = "sheetModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">可用率</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <img src="img/slider1.jpg" alt="">
+    <div class="modal fade" id = "sheetModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">可用率</h4>
                 </div>
-            </div>
-            <!--<div class="modal-footer">-->
+                <div class="modal-body">
+                    <div class="row">
+                        <img src="img/slider1.jpg" alt="">
+                    </div>
+                </div>
+                <!--<div class="modal-footer">-->
 
-            <!--</div>-->
+                <!--</div>-->
+            </div>
         </div>
     </div>
 </div>
