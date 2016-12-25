@@ -3,22 +3,12 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 !function ($) {
-  $(function(){
 
+  $(function(){
     $('.tooltip-demo').tooltip({
       selector: "[data-toggle=tooltip]",
       container: "body"
     });
-
-	$("input[type='number']").stepper();
-
-	$(".selecter_1").selecter();
-
-	$(".selecter_2").selecter();
-
-	$(".selecter_3").selecter();
-
-	$(".selecter_4").selecter();
 
 	$(".selecter_5").selecter();
 

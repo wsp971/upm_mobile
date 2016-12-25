@@ -1,0 +1,24 @@
+
+    .linewrap {
+        background-color: #444;
+        overflow: scroll;
+    }
+    .linewrap ul {
+        display: block;
+        width:300%;
+        margin:0;
+        padding:0;
+    }
+    .linewrap ul li {
+        float: left;
+        display: block;
+    }
+    .linewrap ul li img {
+        width: 400px;
+    }
+
+   .more{
+       width:100%;
+       float:left;
+       text-align: center;
+   }
