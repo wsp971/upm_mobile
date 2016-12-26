@@ -1,7 +1,7 @@
-
+    /*.row{margin-top:10px;}*/
     .linewrap {
-        background-color: #444;
-        overflow: scroll;
+        /*background-color: #444;*/
+        overflow-x: scroll;
     }
     .linewrap ul {
         display: block;
@@ -18,16 +18,34 @@
         width: 400px;
     }
 
-   .more{
+   .nomore{
        width:100%;
        float:left;
        text-align: center;
    }
-
-   .test{
-       width:300%;
-       overflow-x:scroll;
+   .linesheet{
+       width:400px;
+       min-height:240px;
    }
-   /*.testImg{*/
-       /*width:100%;*/
-   /*}*/
+    .time-select{
+        height:34px;
+    }
+    .ump-item-header{
+        font-weight: bold;
+        padding: 0px;
+        /*border:1px solid #e6e9ed;*/
+        text-align: center;
+    }
+
+    .ump-item{
+        padding: 0px;
+        /*border:1px solid #e6e9ed;*/
+        text-align: center;
+    }
+    .time-select span{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        line-height:34px;
+    }
+
+
